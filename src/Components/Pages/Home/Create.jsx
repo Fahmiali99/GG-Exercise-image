@@ -1,6 +1,13 @@
 import React from "react";
 
 function Create() {
+  // handleOnChange = (event) => {
+  //   console.log(event.target.value);
+  //   this.setState({
+  //     itemName: event.target.value,
+  //   });
+  // };
+
   return (
     <div className="homePage  ">
       <div className="  bg-gradient-to-r from-sky-500 to-indigo-500 p-10 ">
@@ -8,9 +15,9 @@ function Create() {
           <div className="inputan">
             <input
               className=" w-auto  p-4 mr-3"
-              type="input "
-              placeholder="masukkan"
-              value=""
+              type="text"
+              placeholder="Masukkan"
+              onChange=""
             />
           </div>
           <div className="inputanx">

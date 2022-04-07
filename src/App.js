@@ -1,12 +1,26 @@
+import * as React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
-import Create from "./Components/Pages/Home/Create";
-import MainData from "./Components/Pages/Home/MainData";
+import MainHome from "./Components/Pages/Home/MainHome";
+import Navbar from "./Components/Pages/Navbar";
+import MainPopuler from "./Components/Pages/Populer/MainPopuler";
 
 function App() {
   return (
-    <div className="App">
-      <Create />
-      <MainData />
+    <div>
+      <Router>
+        <Navbar />
+
+        <Switch>
+          <Route path="/populer">
+            <MainPopuler />
+          </Route>
+
+          <Route path="/">
+            <MainHome />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
