@@ -5,7 +5,9 @@ import MainPopuler from "../Populer/MainPopuler";
 function MainData() {
   return (
     <div>
-      <MainPopuler />
+      <MainPopuler 
+      
+      />
     </div>
   );
 }

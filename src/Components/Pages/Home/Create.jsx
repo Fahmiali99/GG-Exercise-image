@@ -1,12 +1,7 @@
 import React from "react";
 
 function Create() {
-  // handleOnChange = (event) => {
-  //   console.log(event.target.value);
-  //   this.setState({
-  //     itemName: event.target.value,
-  //   });
-  // };
+ 
 
   return (
     <div className="homePage  ">
